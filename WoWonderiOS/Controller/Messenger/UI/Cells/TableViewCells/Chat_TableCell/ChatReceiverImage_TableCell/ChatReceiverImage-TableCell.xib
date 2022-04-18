@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.otf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatReceiverImage_TableCell" rowHeight="183" id="hMs-aS-iTF" customClass="ChatReceiverImage_TableCell" customModule="WoWonder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="248" height="183"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hMs-aS-iTF" id="qri-mS-DAi">
+                <rect key="frame" x="0.0" y="0.0" width="248" height="183"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eDI-Yp-tkP">
+                        <rect key="frame" x="16" y="2" width="200" height="170"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="710-Pg-y4i">
+                                <rect key="frame" x="4" y="4" width="192" height="162"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="snp-Rf-XAa">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="170"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9ti-x4-MuI">
+                                <rect key="frame" x="157.5" y="143.5" width="34.5" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAF-XK-q39">
+                                <rect key="frame" x="88" y="73" width="24" height="24"/>
+                                <color key="tintColor" red="0.6588235294" green="0.28235294119999998" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="ic_playBtn"/>
+                                <connections>
+                                    <action selector="playPressed:" destination="hMs-aS-iTF" eventType="touchUpInside" id="Ia4-cK-4WG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="snp-Rf-XAa" firstAttribute="centerX" secondItem="eDI-Yp-tkP" secondAttribute="centerX" id="1Ga-KK-qEd"/>
+                            <constraint firstItem="VAF-XK-q39" firstAttribute="centerY" secondItem="snp-Rf-XAa" secondAttribute="centerY" id="4wk-xS-wwl"/>
+                            <constraint firstItem="9ti-x4-MuI" firstAttribute="bottom" secondItem="710-Pg-y4i" secondAttribute="bottom" constant="-4" id="6FP-oC-UpE"/>
+                            <constraint firstAttribute="width" constant="200" id="B4j-fv-JiX"/>
+                            <constraint firstItem="snp-Rf-XAa" firstAttribute="height" secondItem="eDI-Yp-tkP" secondAttribute="height" id="Bat-RH-kN5"/>
+                            <constraint firstItem="710-Pg-y4i" firstAttribute="centerX" secondItem="eDI-Yp-tkP" secondAttribute="centerX" id="DMY-uv-Kkd"/>
+                            <constraint firstItem="710-Pg-y4i" firstAttribute="centerY" secondItem="eDI-Yp-tkP" secondAttribute="centerY" id="Djh-KL-896"/>
+                            <constraint firstItem="snp-Rf-XAa" firstAttribute="centerY" secondItem="eDI-Yp-tkP" secondAttribute="centerY" id="Mhb-tK-0tE"/>
+                            <constraint firstItem="9ti-x4-MuI" firstAttribute="trailing" secondItem="710-Pg-y4i" secondAttribute="trailing" constant="-4" id="NVc-xI-Vjr"/>
+                            <constraint firstItem="710-Pg-y4i" firstAttribute="leading" secondItem="eDI-Yp-tkP" secondAttribute="leading" constant="4" id="Tv4-TQ-DbR"/>
+                            <constraint firstItem="710-Pg-y4i" firstAttribute="top" secondItem="eDI-Yp-tkP" secondAttribute="top" constant="4" id="eSG-N0-GDy"/>
+                            <constraint firstAttribute="trailing" secondItem="710-Pg-y4i" secondAttribute="trailing" constant="4" id="hj6-6M-ueK"/>
+                            <constraint firstItem="snp-Rf-XAa" firstAttribute="width" secondItem="eDI-Yp-tkP" secondAttribute="width" id="jsc-gs-NSd"/>
+                            <constraint firstAttribute="bottom" secondItem="710-Pg-y4i" secondAttribute="bottom" constant="4" id="pPU-5C-ZOP"/>
+                            <constraint firstItem="VAF-XK-q39" firstAttribute="centerX" secondItem="snp-Rf-XAa" secondAttribute="centerX" id="ttP-wB-Trg"/>
+                            <constraint firstAttribute="height" constant="170" id="yaa-tn-sPa"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezo-vb-G3G">
+                        <rect key="frame" x="217" y="147" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="prm-XX-G0B"/>
+                            <constraint firstAttribute="height" constant="25" id="wRT-Yz-ruh"/>
+                        </constraints>
+                        <state key="normal" image="star"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="eDI-Yp-tkP" firstAttribute="leading" secondItem="qri-mS-DAi" secondAttribute="leading" constant="16" id="5r3-Ac-UNO"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="eDI-Yp-tkP" secondAttribute="bottom" constant="10.5" id="B2q-mY-zhT"/>
+                    <constraint firstItem="ezo-vb-G3G" firstAttribute="leading" secondItem="eDI-Yp-tkP" secondAttribute="trailing" constant="1" id="OJI-po-aQZ"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eDI-Yp-tkP" secondAttribute="trailing" constant="32" id="b4p-41-gAV"/>
+                    <constraint firstItem="eDI-Yp-tkP" firstAttribute="top" secondItem="qri-mS-DAi" secondAttribute="top" constant="2" id="bDW-jc-gdj"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ezo-vb-G3G" secondAttribute="trailing" constant="6" id="epV-7Q-3Ij"/>
+                    <constraint firstAttribute="bottom" secondItem="ezo-vb-G3G" secondAttribute="bottom" constant="11" id="wbE-L4-yWw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="Fm6-wg-1yb"/>
+            <connections>
+                <outlet property="backGroundView" destination="eDI-Yp-tkP" id="uua-7O-I20"/>
+                <outlet property="fileImage" destination="710-Pg-y4i" id="7OS-bY-sbv"/>
+                <outlet property="playBtn" destination="VAF-XK-q39" id="K1U-yP-KJn"/>
+                <outlet property="starBtn" destination="ezo-vb-G3G" id="Vp3-ex-n5S"/>
+                <outlet property="timeLabel" destination="9ti-x4-MuI" id="4ql-dK-5Ot"/>
+                <outlet property="videoView" destination="snp-Rf-XAa" id="pBD-9U-Pv3"/>
+            </connections>
+            <point key="canvasLocation" x="193.59999999999999" y="69.715142428785612"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_playBtn" width="24" height="24"/>
+        <image name="star" width="32" height="32"/>
+    </resources>
+</document>

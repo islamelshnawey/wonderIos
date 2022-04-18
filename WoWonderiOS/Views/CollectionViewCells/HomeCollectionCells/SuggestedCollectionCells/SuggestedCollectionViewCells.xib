@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SuggestedCollectionViewCells" id="gTV-IL-0wX" customClass="SuggestedCollectionViewCells" customModule="WoWonder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="388"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="387" height="388"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3lc-Zg-WNj">
+                        <rect key="frame" x="0.0" y="0.0" width="387" height="388"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="sjo-Qh-qbN">
+                                <rect key="frame" x="0.0" y="0.0" width="387" height="233"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HkY-Lp-TLd">
+                                <rect key="frame" x="0.0" y="233" width="387" height="155"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfY-bR-ld1">
+                                        <rect key="frame" x="15" y="100" width="357" height="40"/>
+                                        <color key="backgroundColor" red="0.6588235294" green="0.28235294119999998" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="PYg-j9-C2o"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <state key="normal" title="Join Group">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="joinGroupClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="qpv-B1-cTi"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bke-se-itn">
+                                        <rect key="frame" x="65" y="17.5" width="156" height="39.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="World of Furniture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jz-JL-1hH">
+                                                <rect key="frame" x="0.0" y="0.0" width="156" height="21.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 members" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAH-4t-0ep">
+                                                <rect key="frame" x="0.0" y="21.5" width="156" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="xkY-Ys-0Or">
+                                        <rect key="frame" x="15" y="15" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="KWe-aM-4YE"/>
+                                            <constraint firstAttribute="height" constant="45" id="RIA-c7-MHC"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                                <real key="value" value="22.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="gfY-bR-ld1" secondAttribute="trailing" constant="15" id="1sT-A6-IPw"/>
+                                    <constraint firstAttribute="bottom" secondItem="gfY-bR-ld1" secondAttribute="bottom" constant="15" id="AED-HN-844"/>
+                                    <constraint firstItem="gfY-bR-ld1" firstAttribute="leading" secondItem="HkY-Lp-TLd" secondAttribute="leading" constant="15" id="B0i-3U-KCC"/>
+                                    <constraint firstItem="gfY-bR-ld1" firstAttribute="centerX" secondItem="HkY-Lp-TLd" secondAttribute="centerX" id="Zge-UD-rvs"/>
+                                    <constraint firstItem="bke-se-itn" firstAttribute="centerY" secondItem="xkY-Ys-0Or" secondAttribute="centerY" id="qzS-lO-DFA"/>
+                                    <constraint firstItem="xkY-Ys-0Or" firstAttribute="leading" secondItem="HkY-Lp-TLd" secondAttribute="leading" constant="15" id="rlD-FD-Aow"/>
+                                    <constraint firstItem="bke-se-itn" firstAttribute="leading" secondItem="xkY-Ys-0Or" secondAttribute="trailing" constant="5" id="u0g-u1-kTL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sjo-Qh-qbN" secondAttribute="trailing" id="8AT-m9-ZFv"/>
+                            <constraint firstItem="HkY-Lp-TLd" firstAttribute="leading" secondItem="3lc-Zg-WNj" secondAttribute="leading" id="9yb-jb-SO3"/>
+                            <constraint firstItem="sjo-Qh-qbN" firstAttribute="height" secondItem="3lc-Zg-WNj" secondAttribute="height" multiplier="0.6" id="DTK-2b-k1C"/>
+                            <constraint firstItem="xkY-Ys-0Or" firstAttribute="top" secondItem="sjo-Qh-qbN" secondAttribute="bottom" constant="15" id="Dek-dx-fph"/>
+                            <constraint firstItem="sjo-Qh-qbN" firstAttribute="top" secondItem="3lc-Zg-WNj" secondAttribute="top" id="Rye-f5-ekj"/>
+                            <constraint firstItem="sjo-Qh-qbN" firstAttribute="leading" secondItem="3lc-Zg-WNj" secondAttribute="leading" id="cho-GR-3zA"/>
+                            <constraint firstAttribute="trailing" secondItem="HkY-Lp-TLd" secondAttribute="trailing" id="eEF-I9-gOG"/>
+                            <constraint firstItem="HkY-Lp-TLd" firstAttribute="top" secondItem="sjo-Qh-qbN" secondAttribute="bottom" id="sie-ye-49W"/>
+                            <constraint firstAttribute="bottom" secondItem="HkY-Lp-TLd" secondAttribute="bottom" id="wYK-cW-J1T"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="3lc-Zg-WNj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="69s-m4-1fd"/>
+                <constraint firstAttribute="trailing" secondItem="3lc-Zg-WNj" secondAttribute="trailing" id="JEC-e1-FIa"/>
+                <constraint firstItem="3lc-Zg-WNj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="QaD-E0-YBd"/>
+                <constraint firstAttribute="bottom" secondItem="3lc-Zg-WNj" secondAttribute="bottom" id="SAn-Eo-jMZ"/>
+            </constraints>
+            <size key="customSize" width="387" height="388"/>
+            <connections>
+                <outlet property="backView" destination="3lc-Zg-WNj" id="1df-T1-ywy"/>
+                <outlet property="groupImageView" destination="sjo-Qh-qbN" id="udR-LG-4TO"/>
+                <outlet property="groupMemberLabel" destination="SAH-4t-0ep" id="0UV-DU-KNN"/>
+                <outlet property="groupNameLabel" destination="8jz-JL-1hH" id="0ik-kC-NJh"/>
+                <outlet property="joinGroupButton" destination="gfY-bR-ld1" id="WU5-80-E6B"/>
+                <outlet property="profileLeading" destination="rlD-FD-Aow" id="8bm-vB-DZb"/>
+                <outlet property="profileWidth" destination="KWe-aM-4YE" id="HUn-xG-Ro3"/>
+                <outlet property="textView" destination="HkY-Lp-TLd" id="59i-GH-nr8"/>
+                <outlet property="userprofileImageView" destination="xkY-Ys-0Or" id="Lwi-J7-ahH"/>
+            </connections>
+            <point key="canvasLocation" x="329.71014492753625" y="202.90178571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="loginBackground" width="500" height="889"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

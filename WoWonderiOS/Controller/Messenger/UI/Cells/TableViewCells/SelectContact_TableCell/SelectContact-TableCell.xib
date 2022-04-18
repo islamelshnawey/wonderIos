@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.otf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SelectContact_TableCell" rowHeight="72" id="Dex-Yj-mSb" customClass="SelectContact_TableCell" customModule="WoWonder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dex-Yj-mSb" id="wL9-iz-wUD">
+                <rect key="frame" x="0.0" y="0.0" width="367" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_profileimage" translatesAutoresizingMaskIntoConstraints="NO" id="bsq-lX-cf8">
+                        <rect key="frame" x="9" y="11" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Kex-cG-F8C"/>
+                            <constraint firstAttribute="width" constant="50" id="LTK-IV-BYg"/>
+                            <constraint firstAttribute="width" secondItem="bsq-lX-cf8" secondAttribute="height" multiplier="1:1" id="Usc-tE-Iy3"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColorV">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidthV">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6aQ-WN-Tzw">
+                        <rect key="frame" x="75" y="13" width="198" height="46"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsp-vt-A4t">
+                                <rect key="frame" x="0.0" y="0.0" width="198" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="JYp-Cd-Cmi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TitleLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drI-7a-Gr1">
+                                <rect key="frame" x="0.0" y="22" width="198" height="24"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
+                                <color key="textColor" red="0.70196078429999997" green="0.70196078429999997" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="aS4-My-aLC">
+                        <rect key="frame" x="289" y="24" width="63" height="24"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fc0-Oi-mcy">
+                                <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="VoE-xG-3xE"/>
+                                    <constraint firstAttribute="height" constant="24" id="jf2-qw-FOk"/>
+                                </constraints>
+                                <state key="normal" image="ic_callIcon"/>
+                                <connections>
+                                    <action selector="audioCallPressed:" destination="Dex-Yj-mSb" eventType="touchUpInside" id="Mgi-C5-sny"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ai6-Kh-aCm">
+                                <rect key="frame" x="39" y="0.0" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="bQy-wg-EBx"/>
+                                    <constraint firstAttribute="height" constant="24" id="xoS-l1-uH9"/>
+                                </constraints>
+                                <state key="normal" image="ic_videoBlack"/>
+                                <connections>
+                                    <action selector="videoCallPressed:" destination="Dex-Yj-mSb" eventType="touchUpInside" id="pyg-8e-t4Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aS4-My-aLC" firstAttribute="trailing" secondItem="wL9-iz-wUD" secondAttribute="trailingMargin" id="8lX-nx-hBj"/>
+                    <constraint firstItem="bsq-lX-cf8" firstAttribute="centerY" secondItem="6aQ-WN-Tzw" secondAttribute="centerY" id="FdX-rg-RzP"/>
+                    <constraint firstItem="bsq-lX-cf8" firstAttribute="leading" secondItem="wL9-iz-wUD" secondAttribute="leading" constant="9" id="G57-zt-qha"/>
+                    <constraint firstItem="6aQ-WN-Tzw" firstAttribute="top" secondItem="wL9-iz-wUD" secondAttribute="topMargin" constant="2" id="ZvT-vW-nrm"/>
+                    <constraint firstItem="bsq-lX-cf8" firstAttribute="top" secondItem="wL9-iz-wUD" secondAttribute="top" constant="11" id="aJj-Gc-fgL"/>
+                    <constraint firstItem="aS4-My-aLC" firstAttribute="leading" secondItem="6aQ-WN-Tzw" secondAttribute="trailing" constant="16" id="ckL-II-GHq"/>
+                    <constraint firstItem="aS4-My-aLC" firstAttribute="centerY" secondItem="6aQ-WN-Tzw" secondAttribute="centerY" id="nGX-gf-d6t"/>
+                    <constraint firstItem="6aQ-WN-Tzw" firstAttribute="leading" secondItem="bsq-lX-cf8" secondAttribute="trailing" constant="16" id="yt6-9m-Dyb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="yw9-vM-Czn"/>
+            <connections>
+                <outlet property="callBtn" destination="Fc0-Oi-mcy" id="3h3-rv-pEl"/>
+                <outlet property="profileImage" destination="bsq-lX-cf8" id="jry-dz-Ltk"/>
+                <outlet property="titleLabel" destination="drI-7a-Gr1" id="krj-gc-pjL"/>
+                <outlet property="usernameLabel" destination="hsp-vt-A4t" id="qbz-s7-kbT"/>
+            </connections>
+            <point key="canvasLocation" x="466" y="71"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_callIcon" width="24" height="24"/>
+        <image name="ic_profileimage" width="720" height="720"/>
+        <image name="ic_videoBlack" width="24" height="24"/>
+    </resources>
+</document>

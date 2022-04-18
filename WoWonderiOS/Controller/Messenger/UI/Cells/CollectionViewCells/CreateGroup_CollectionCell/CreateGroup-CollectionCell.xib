@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.otf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CreateGroup_CollectionCell" id="gTV-IL-0wX" customClass="CreateGroup_CollectionCell" customModule="WoWonder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="156" height="177"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="156" height="177"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="all-5S-cy9">
+                        <rect key="frame" x="0.0" y="0.0" width="156" height="177"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ECX-QT-bPv">
+                                <rect key="frame" x="28" y="38.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="JiZ-vR-wIb"/>
+                                    <constraint firstAttribute="width" constant="100" id="hEP-vq-HHE"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REc-xm-aOK">
+                                <rect key="frame" x="16" y="154.5" width="124" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zz-HH-9IL">
+                                <rect key="frame" x="98" y="38.5" width="30" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9nE-ZM-9fw"/>
+                                    <constraint firstAttribute="width" constant="30" id="G0Q-fu-WQU"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" image="ic_cancel"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="cancelPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="iCg-vH-CAr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ECX-QT-bPv" firstAttribute="centerY" secondItem="all-5S-cy9" secondAttribute="centerY" id="4tI-PT-AVk"/>
+                            <constraint firstAttribute="trailing" secondItem="REc-xm-aOK" secondAttribute="trailing" constant="16" id="54Z-5d-jeX"/>
+                            <constraint firstItem="8Zz-HH-9IL" firstAttribute="trailing" secondItem="ECX-QT-bPv" secondAttribute="trailing" id="Ci7-Ch-cgC"/>
+                            <constraint firstItem="8Zz-HH-9IL" firstAttribute="top" secondItem="ECX-QT-bPv" secondAttribute="top" id="Is9-J3-0ei"/>
+                            <constraint firstItem="REc-xm-aOK" firstAttribute="top" secondItem="ECX-QT-bPv" secondAttribute="bottom" constant="16" id="hsG-5D-WYN"/>
+                            <constraint firstItem="ECX-QT-bPv" firstAttribute="centerX" secondItem="all-5S-cy9" secondAttribute="centerX" id="vY5-sD-6Il"/>
+                            <constraint firstItem="REc-xm-aOK" firstAttribute="leading" secondItem="all-5S-cy9" secondAttribute="leading" constant="16" id="vhl-po-qiG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="all-5S-cy9" secondAttribute="bottom" id="3Sh-Ci-YHP"/>
+                <constraint firstAttribute="trailing" secondItem="all-5S-cy9" secondAttribute="trailing" id="XNk-OX-GjQ"/>
+                <constraint firstItem="all-5S-cy9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="iEO-Gh-Ton"/>
+                <constraint firstItem="all-5S-cy9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zE9-iZ-66Y"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="156" height="177"/>
+            <connections>
+                <outlet property="profileImage" destination="ECX-QT-bPv" id="Wkt-Zq-dQL"/>
+                <outlet property="usernameLabel" destination="REc-xm-aOK" id="0wf-Kf-zyq"/>
+            </connections>
+            <point key="canvasLocation" x="202.89855072463769" y="146.98660714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_cancel" width="24" height="24"/>
+    </resources>
+</document>

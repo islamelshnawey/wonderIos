@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendsTableItem" rowHeight="72" id="3RY-dB-SRR" customClass="FriendsTableItem" customModule="WoWonder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3RY-dB-SRR" id="8CF-2t-L98">
+                <rect key="frame" x="0.0" y="0.0" width="367" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_profileimage" translatesAutoresizingMaskIntoConstraints="NO" id="g3s-96-Vz5">
+                        <rect key="frame" x="9" y="11" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Q1Q-rT-TyT"/>
+                            <constraint firstAttribute="width" secondItem="g3s-96-Vz5" secondAttribute="height" multiplier="1:1" id="Qgl-Ld-zwS"/>
+                            <constraint firstAttribute="width" constant="50" id="cbi-pm-uSu"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CU4-Tb-Z0q">
+                        <rect key="frame" x="75" y="13" width="124.5" height="46"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucZ-WG-dUd">
+                                <rect key="frame" x="0.0" y="0.0" width="124.5" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="32d-0O-iKP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi! I am using Chats " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0M-mf-THO">
+                                <rect key="frame" x="0.0" y="22" width="124.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.70196078429999997" green="0.70196078429999997" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CU4-Tb-Z0q" firstAttribute="top" secondItem="8CF-2t-L98" secondAttribute="topMargin" constant="2" id="4SK-lC-Eid"/>
+                    <constraint firstItem="g3s-96-Vz5" firstAttribute="leading" secondItem="8CF-2t-L98" secondAttribute="leading" constant="9" id="XV6-jK-IDV"/>
+                    <constraint firstItem="g3s-96-Vz5" firstAttribute="top" secondItem="8CF-2t-L98" secondAttribute="top" constant="11" id="jqs-lR-o5w"/>
+                    <constraint firstItem="CU4-Tb-Z0q" firstAttribute="leading" secondItem="g3s-96-Vz5" secondAttribute="trailing" constant="16" id="rwL-dS-o63"/>
+                    <constraint firstItem="g3s-96-Vz5" firstAttribute="centerY" secondItem="CU4-Tb-Z0q" secondAttribute="centerY" id="tpy-wI-P5x"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="Mh8-KW-yvE"/>
+            <connections>
+                <outlet property="WoWonderStringLabel" destination="O0M-mf-THO" id="7qT-XP-kIl"/>
+                <outlet property="profileImage" destination="g3s-96-Vz5" id="6o0-ue-E9H"/>
+                <outlet property="timeLabel" destination="O0M-mf-THO" id="W6Q-lX-N6s"/>
+                <outlet property="usernameLabel" destination="ucZ-WG-dUd" id="OOF-NU-CA4"/>
+            </connections>
+            <point key="canvasLocation" x="-67" y="-13"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_profileimage" width="720" height="720"/>
+    </resources>
+</document>

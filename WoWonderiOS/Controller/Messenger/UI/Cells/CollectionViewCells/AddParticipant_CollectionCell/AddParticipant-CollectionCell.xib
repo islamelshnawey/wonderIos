@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddParticipant_CollectionCell" id="gTV-IL-0wX" customClass="AddParticipant_CollectionCell" customModule="WoWonder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="159" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="159" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VqY-tn-N9d">
+                        <rect key="frame" x="0.0" y="0.0" width="159" height="150"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RfJ-Au-kHf">
+                                <rect key="frame" x="29.5" y="25" width="100" height="100"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_addBtn" translatesAutoresizingMaskIntoConstraints="NO" id="c6i-GN-aEM">
+                                        <rect key="frame" x="20" y="0.0" width="60" height="100"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="c6i-GN-aEM" firstAttribute="centerY" secondItem="RfJ-Au-kHf" secondAttribute="centerY" id="5XS-ed-YC6"/>
+                                    <constraint firstAttribute="height" constant="100" id="KRZ-Fw-Q1e"/>
+                                    <constraint firstItem="c6i-GN-aEM" firstAttribute="width" secondItem="RfJ-Au-kHf" secondAttribute="width" multiplier="0.6" id="RLO-XY-9Wn"/>
+                                    <constraint firstItem="c6i-GN-aEM" firstAttribute="height" secondItem="RfJ-Au-kHf" secondAttribute="height" id="Vbp-oa-RJu"/>
+                                    <constraint firstItem="c6i-GN-aEM" firstAttribute="centerX" secondItem="RfJ-Au-kHf" secondAttribute="centerX" id="a4u-Nb-yxg"/>
+                                    <constraint firstAttribute="width" constant="100" id="abd-I1-fYo"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColorV">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RfJ-Au-kHf" firstAttribute="centerY" secondItem="VqY-tn-N9d" secondAttribute="centerY" id="9HK-oI-UEd"/>
+                            <constraint firstItem="RfJ-Au-kHf" firstAttribute="centerX" secondItem="VqY-tn-N9d" secondAttribute="centerX" id="Sub-rM-M70"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="VqY-tn-N9d" secondAttribute="bottom" id="0cM-gY-Kzd"/>
+                <constraint firstItem="VqY-tn-N9d" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="13e-Vm-tUh"/>
+                <constraint firstAttribute="trailing" secondItem="VqY-tn-N9d" secondAttribute="trailing" id="3Dp-JP-z7r"/>
+                <constraint firstItem="VqY-tn-N9d" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oEY-QR-bV1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="159" height="150"/>
+            <point key="canvasLocation" x="210.86956521739131" y="123.21428571428571"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_addBtn" width="256" height="256"/>
+    </resources>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SuggestedGroupsCell" rowHeight="234" id="KGk-i7-Jjw" customClass="SuggestedGroupsCell" customModule="WoWonder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="429" height="234"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="429" height="234"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xWx-ko-lcG">
+                        <rect key="frame" x="0.0" y="50" width="429" height="184"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="184" id="4GT-3t-PbG"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zaS-E6-vWm">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAj-T8-zG9">
+                        <rect key="frame" x="364" y="10" width="50" height="30"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <state key="normal" title="See All">
+                            <color key="titleColor" red="0.6588235294117647" green="0.28235294117647058" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="seeAllClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="JNc-BJ-Svb"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suggested Groups" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0v-Oz-WPU">
+                        <rect key="frame" x="15" y="0.0" width="160.5" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="943-Sz-yA4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="xWx-ko-lcG" secondAttribute="bottom" id="JkF-4m-Xuj"/>
+                    <constraint firstItem="e0v-Oz-WPU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="O3o-FZ-gmF"/>
+                    <constraint firstItem="e0v-Oz-WPU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Vqe-gK-w6C"/>
+                    <constraint firstAttribute="trailing" secondItem="NAj-T8-zG9" secondAttribute="trailing" constant="15" id="XWE-jl-T5t"/>
+                    <constraint firstAttribute="trailing" secondItem="xWx-ko-lcG" secondAttribute="trailing" id="aH8-Xt-XNE"/>
+                    <constraint firstItem="xWx-ko-lcG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="e0S-vd-9CD"/>
+                    <constraint firstItem="NAj-T8-zG9" firstAttribute="centerY" secondItem="e0v-Oz-WPU" secondAttribute="centerY" id="xnj-xJ-Ej7"/>
+                    <constraint firstItem="xWx-ko-lcG" firstAttribute="top" secondItem="e0v-Oz-WPU" secondAttribute="bottom" id="zD1-5V-hEC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionView" destination="xWx-ko-lcG" id="fLM-ty-BpN"/>
+                <outlet property="seeAllButton" destination="NAj-T8-zG9" id="sLc-3p-gqd"/>
+                <outlet property="suggestedLabel" destination="e0v-Oz-WPU" id="RDx-Lz-oKO"/>
+            </connections>
+            <point key="canvasLocation" x="165.94202898550725" y="158.03571428571428"/>
+        </tableViewCell>
+    </objects>
+</document>

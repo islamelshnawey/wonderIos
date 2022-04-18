@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsSectionThreeTableItem" rowHeight="76" id="Ny0-zf-D4W" customClass="SettingsSectionThreeTableItem" customModule="WoWonder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ny0-zf-D4W" id="etY-dY-7TB">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ceR-xI-gIb">
+                        <rect key="frame" x="16" y="21" width="233" height="34"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification Popup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fvk-dl-0nV">
+                                <rect key="frame" x="0.0" y="0.0" width="233" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="get notifications when you receive messages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="RX1-PB-tbQ">
+                                <rect key="frame" x="0.0" y="18" width="233" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c20-fV-5mJ">
+                        <rect key="frame" x="265" y="22.5" width="49" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="fGP-y6-8EF"/>
+                            <constraint firstAttribute="width" constant="47" id="pB1-aQ-yWv"/>
+                        </constraints>
+                        <color key="onTintColor" red="0.59607843140000005" green="0.25882352939999997" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <connections>
+                            <action selector="switchAction:" destination="Ny0-zf-D4W" eventType="valueChanged" id="Iqr-Ea-fiG"/>
+                        </connections>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="c20-fV-5mJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ceR-xI-gIb" secondAttribute="trailing" constant="16" id="3rv-sA-Iva"/>
+                    <constraint firstItem="ceR-xI-gIb" firstAttribute="centerY" secondItem="etY-dY-7TB" secondAttribute="centerY" id="5ff-qQ-Wqd"/>
+                    <constraint firstItem="ceR-xI-gIb" firstAttribute="leading" secondItem="etY-dY-7TB" secondAttribute="leading" constant="16" id="EL4-ce-myj"/>
+                    <constraint firstAttribute="trailing" secondItem="c20-fV-5mJ" secondAttribute="trailing" constant="8" id="Tu4-Sz-cS0"/>
+                    <constraint firstItem="c20-fV-5mJ" firstAttribute="centerY" secondItem="ceR-xI-gIb" secondAttribute="centerY" id="dgI-SU-8L4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="gGi-sQ-yqv"/>
+            <connections>
+                <outlet property="Switchlabel" destination="c20-fV-5mJ" id="Ae1-1W-fRy"/>
+                <outlet property="descriptionLabel" destination="RX1-PB-tbQ" id="ZYZ-PL-ivR"/>
+                <outlet property="titleLabel" destination="Fvk-dl-0nV" id="9e9-he-bqT"/>
+            </connections>
+            <point key="canvasLocation" x="79.710144927536234" y="30.133928571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

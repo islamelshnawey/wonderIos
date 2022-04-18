@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Followings_TableCell" rowHeight="72" id="J4X-cV-zqv" customClass="Followings_TableCell" customModule="WoWonder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J4X-cV-zqv" id="fFx-GL-SxD">
+                <rect key="frame" x="0.0" y="0.0" width="367" height="71.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_profileimage" translatesAutoresizingMaskIntoConstraints="NO" id="SA0-PH-bco">
+                        <rect key="frame" x="9" y="11" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="6oe-05-jky"/>
+                            <constraint firstAttribute="width" constant="50" id="cgQ-uc-kkj"/>
+                            <constraint firstAttribute="width" secondItem="SA0-PH-bco" secondAttribute="height" multiplier="1:1" id="hIn-QL-2GQ"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SeE-o4-fOs">
+                        <rect key="frame" x="75" y="13" width="177" height="46"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWb-Q8-vFf">
+                                <rect key="frame" x="0.0" y="0.0" width="177" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="vOE-n6-Smx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TimeZone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLM-nq-il5">
+                                <rect key="frame" x="0.0" y="22" width="177" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.70196078429999997" green="0.70196078429999997" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUT-hL-2mD">
+                        <rect key="frame" x="268" y="23" width="83" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="83" id="5jk-nM-9JO"/>
+                            <constraint firstAttribute="height" constant="26" id="chJ-mH-lbe"/>
+                        </constraints>
+                        <state key="normal" title="Follow">
+                            <color key="titleColor" red="0.6588235294" green="0.28235294119999998" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="followPressed:" destination="J4X-cV-zqv" eventType="touchUpInside" id="ei6-bX-sqw"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SA0-PH-bco" firstAttribute="leading" secondItem="fFx-GL-SxD" secondAttribute="leading" constant="9" id="IXl-OY-RLA"/>
+                    <constraint firstItem="HUT-hL-2mD" firstAttribute="leading" secondItem="SeE-o4-fOs" secondAttribute="trailing" constant="16" id="Pe6-jp-y95"/>
+                    <constraint firstItem="SA0-PH-bco" firstAttribute="top" secondItem="fFx-GL-SxD" secondAttribute="top" constant="11" id="WJp-UF-eCn"/>
+                    <constraint firstItem="HUT-hL-2mD" firstAttribute="centerY" secondItem="SeE-o4-fOs" secondAttribute="centerY" id="bnN-5F-a8s"/>
+                    <constraint firstItem="SeE-o4-fOs" firstAttribute="top" secondItem="fFx-GL-SxD" secondAttribute="topMargin" constant="2" id="hhO-Wt-b9o"/>
+                    <constraint firstItem="SA0-PH-bco" firstAttribute="centerY" secondItem="SeE-o4-fOs" secondAttribute="centerY" id="kch-mi-DxX"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="HUT-hL-2mD" secondAttribute="trailing" id="woN-KS-gti"/>
+                    <constraint firstItem="SeE-o4-fOs" firstAttribute="leading" secondItem="SA0-PH-bco" secondAttribute="trailing" constant="16" id="zAK-Vy-LQN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="UVi-w7-moN"/>
+            <connections>
+                <outlet property="followBtn" destination="HUT-hL-2mD" id="crv-Mb-wg1"/>
+                <outlet property="profileImage" destination="SA0-PH-bco" id="Plq-BX-EI5"/>
+                <outlet property="timeLabel" destination="aLM-nq-il5" id="oAa-yx-fQ6"/>
+                <outlet property="usernameLabel" destination="QWb-Q8-vFf" id="dMQ-lc-8Ju"/>
+            </connections>
+            <point key="canvasLocation" x="510" y="57"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_profileimage" width="720" height="720"/>
+    </resources>
+</document>

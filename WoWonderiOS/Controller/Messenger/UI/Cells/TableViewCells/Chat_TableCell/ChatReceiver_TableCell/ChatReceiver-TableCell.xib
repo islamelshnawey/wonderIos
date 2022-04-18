@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatReceiver_TableCell" rowHeight="107" id="j77-Y3-cu7" customClass="ChatReceiver_TableCell" customModule="WoWonder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="107"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="j77-Y3-cu7" id="bOr-IP-EQa">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="107"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9Yv-Pd-YE1">
+                        <rect key="frame" x="11" y="11" width="10" height="85.5"/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZw-o1-nsv">
+                        <rect key="frame" x="29" y="61" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="OIK-7j-WZi"/>
+                            <constraint firstAttribute="width" constant="25" id="rtQ-zL-jwD"/>
+                        </constraints>
+                        <state key="normal" image="star"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="yZw-o1-nsv" firstAttribute="leading" secondItem="9Yv-Pd-YE1" secondAttribute="trailing" constant="8" id="BW0-xx-zOa"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yZw-o1-nsv" secondAttribute="trailing" constant="16" id="Nxk-MF-mUh"/>
+                    <constraint firstItem="9Yv-Pd-YE1" firstAttribute="top" secondItem="bOr-IP-EQa" secondAttribute="top" constant="11" id="Vuv-b3-pJh"/>
+                    <constraint firstAttribute="bottom" secondItem="9Yv-Pd-YE1" secondAttribute="bottom" constant="10.5" id="tKk-RG-SaS"/>
+                    <constraint firstAttribute="bottom" secondItem="yZw-o1-nsv" secondAttribute="bottom" constant="21" id="z5t-bY-oCR"/>
+                    <constraint firstItem="9Yv-Pd-YE1" firstAttribute="leading" secondItem="bOr-IP-EQa" secondAttribute="leading" constant="11" id="zaG-e7-T0e"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="dgT-t1-bXV"/>
+            <connections>
+                <outlet property="messageTxtView" destination="9Yv-Pd-YE1" id="QIx-EZ-dH2"/>
+                <outlet property="starBtn" destination="yZw-o1-nsv" id="y0O-V6-anI"/>
+            </connections>
+            <point key="canvasLocation" x="276" y="149"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="star" width="32" height="32"/>
+    </resources>
+</document>

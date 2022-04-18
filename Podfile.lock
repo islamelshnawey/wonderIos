@@ -1,0 +1,350 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.7.1)
+  - ActiveLabel (1.1.0)
+  - AgoraRtcEngine_iOS (3.3.1)
+  - Alamofire (5.4.1)
+  - AlamofireImage (4.1.0):
+    - Alamofire (~> 5.1)
+  - AppAuth (1.4.0):
+    - AppAuth/Core (= 1.4.0)
+    - AppAuth/ExternalUserAgent (= 1.4.0)
+  - AppAuth/Core (1.4.0)
+  - AppAuth/ExternalUserAgent (1.4.0)
+  - AsyncSwift (2.0.4)
+  - Braintree (4.37.0):
+    - Braintree/Card (= 4.37.0)
+    - Braintree/Core (= 4.37.0)
+    - Braintree/PayPal (= 4.37.0)
+    - Braintree/UI (= 4.37.0)
+  - Braintree/Card (4.37.0):
+    - Braintree/Core
+  - Braintree/Core (4.37.0)
+  - Braintree/PaymentFlow (4.37.0):
+    - Braintree/Card
+    - Braintree/Core
+    - Braintree/PayPalOneTouch
+  - Braintree/PayPal (4.37.0):
+    - Braintree/Core
+    - Braintree/PayPalOneTouch
+  - Braintree/PayPalDataCollector (4.37.0):
+    - Braintree/Core
+    - Braintree/PayPalUtils
+  - Braintree/PayPalOneTouch (4.37.0):
+    - Braintree/Core
+    - Braintree/PayPalDataCollector
+    - Braintree/PayPalUtils
+  - Braintree/PayPalUtils (4.37.0)
+  - Braintree/UI (4.37.0):
+    - Braintree/Card
+    - Braintree/Core
+  - Braintree/UnionPay (4.37.0):
+    - Braintree/Card
+    - Braintree/Core
+  - BraintreeDropIn (8.1.3):
+    - BraintreeDropIn/DropIn (= 8.1.3)
+  - BraintreeDropIn/DropIn (8.1.3):
+    - Braintree/Card (~> 4.32)
+    - Braintree/Core (~> 4.32)
+    - Braintree/PaymentFlow (~> 4.32)
+    - Braintree/PayPal (~> 4.32)
+    - Braintree/UnionPay (~> 4.32)
+    - BraintreeDropIn/UIKit
+  - BraintreeDropIn/UIKit (8.1.3)
+  - BSImagePicker (3.3.1)
+  - CircleBar (0.8.2)
+  - Cosmos (20.0.1)
+  - CropViewController (2.6.0)
+  - DropDown (2.3.13)
+  - FBSDKCoreKit (9.0.1):
+    - FBSDKCoreKit/Basics (= 9.0.1)
+    - FBSDKCoreKit/Core (= 9.0.1)
+  - FBSDKCoreKit/Basics (9.0.1)
+  - FBSDKCoreKit/Core (9.0.1):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (9.0.1):
+    - FBSDKLoginKit/Login (= 9.0.1)
+  - FBSDKLoginKit/Login (9.0.1):
+    - FBSDKCoreKit (~> 9.0.1)
+  - FittedSheets (2.4.0)
+  - Floaty (4.2.0)
+  - FontAwesome.swift (1.9.1)
+  - Google-Mobile-Ads-SDK (8.1.0):
+    - GoogleAppMeasurement (~> 7.0)
+    - GoogleUserMessagingPlatform (~> 1.1)
+  - GoogleAppMeasurement (7.7.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/MethodSwizzler (~> 7.0)
+    - GoogleUtilities/Network (~> 7.0)
+    - "GoogleUtilities/NSData+zlib (~> 7.0)"
+    - nanopb (~> 2.30907.0)
+  - GoogleMaps (4.1.0):
+    - GoogleMaps/Maps (= 4.1.0)
+  - GoogleMaps/Base (4.1.0)
+  - GoogleMaps/Maps (4.1.0):
+    - GoogleMaps/Base
+  - GooglePlaces (4.1.0):
+    - GoogleMaps/Base (= 4.1.0)
+  - GoogleSignIn (5.0.0):
+    - AppAuth (~> 1.1)
+    - GTMAppAuth (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleUserMessagingPlatform (1.4.0)
+  - GoogleUtilities/AppDelegateSwizzler (7.2.2):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (7.2.2):
+    - PromisesObjC (~> 1.2)
+  - GoogleUtilities/Logger (7.2.2):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (7.2.2):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (7.2.2):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.2.2)"
+  - GoogleUtilities/Reachability (7.2.2):
+    - GoogleUtilities/Logger
+  - GTMAppAuth (1.1.0):
+    - AppAuth/Core (~> 1.4)
+    - GTMSessionFetcher (~> 1.4)
+  - GTMSessionFetcher (1.5.0):
+    - GTMSessionFetcher/Full (= 1.5.0)
+  - GTMSessionFetcher/Core (1.5.0)
+  - GTMSessionFetcher/Full (1.5.0):
+    - GTMSessionFetcher/Core (= 1.5.0)
+  - ImageSlideshow (1.9.2):
+    - ImageSlideshow/Core (= 1.9.2)
+  - ImageSlideshow/Core (1.9.2)
+  - ImageSlideshow/Kingfisher (1.9.2):
+    - ImageSlideshow/Core
+    - Kingfisher (> 3.0)
+  - IQKeyboardManager (6.5.6)
+  - iRecordView (0.1.3)
+  - JGProgressHUD (2.2)
+  - Kingfisher (5.15.8):
+    - Kingfisher/Core (= 5.15.8)
+  - Kingfisher/Core (5.15.8)
+  - LinearProgressBar (1.0.2)
+  - MMPlayerView (6.0.2)
+  - MobilePlayer (1.3.0)
+  - nanopb (2.30907.0):
+    - nanopb/decode (= 2.30907.0)
+    - nanopb/encode (= 2.30907.0)
+  - nanopb/decode (2.30907.0)
+  - nanopb/encode (2.30907.0)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - OneSignal (2.16.3)
+  - PaginatedTableView (1.0.1)
+  - Paystack (3.0.17):
+    - Paystack/Core (= 3.0.17)
+  - Paystack/Core (3.0.17)
+  - Player (0.14.0)
+  - PromisesObjC (1.2.12)
+  - R.swift (5.4.0):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
+  - SDWebImage (5.10.4):
+    - SDWebImage/Core (= 5.10.4)
+  - SDWebImage/Core (5.10.4)
+  - SkyFloatingLabelTextField (4.0.0)
+  - Socket.IO-Client-Swift (15.2.0):
+    - Starscream (~> 3.1)
+  - Starscream (3.1.1)
+  - SwiftEventBus (2.2.0)
+  - SwiftyBeaver (1.9.5)
+  - Toast-Swift (5.0.1)
+  - TTRangeSlider (1.0.7)
+  - TwilioVideo (2.12.0)
+  - VersaPlayer (3.0.2)
+  - XLPagerTabStrip (9.0.0)
+  - YouTubePlayer (0.7.2)
+  - ZKProgressHUD (5.1.2)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0
+  - ActiveLabel
+  - AgoraRtcEngine_iOS
+  - Alamofire (~> 5.2)
+  - AlamofireImage
+  - AsyncSwift
+  - Braintree
+  - BraintreeDropIn
+  - BSImagePicker (~> 3.1)
+  - CircleBar
+  - Cosmos (~> 20.0)
+  - CropViewController
+  - DropDown
+  - FBSDKCoreKit
+  - FBSDKLoginKit
+  - FittedSheets
+  - Floaty
+  - FontAwesome.swift
+  - Google-Mobile-Ads-SDK
+  - GoogleMaps
+  - GooglePlaces
+  - GoogleSignIn (= 5.0.0)
+  - ImageSlideshow
+  - ImageSlideshow/Kingfisher
+  - IQKeyboardManager
+  - iRecordView
+  - JGProgressHUD
+  - Kingfisher (~> 5.15.7)
+  - LinearProgressBar
+  - MMPlayerView
+  - MobilePlayer
+  - NVActivityIndicatorView
+  - OneSignal (< 3.0, >= 2.11.2)
+  - PaginatedTableView
+  - Paystack
+  - Player
+  - R.swift
+  - SDWebImage
+  - SkyFloatingLabelTextField
+  - Socket.IO-Client-Swift (~> 15.2.0)
+  - SwiftEventBus (from `https://github.com/cesarferreira/SwiftEventBus.git`, tag `3.0.0`)
+  - SwiftyBeaver
+  - Toast-Swift
+  - TTRangeSlider
+  - TwilioVideo (~> 2.3)
+  - VersaPlayer
+  - XLPagerTabStrip
+  - YouTubePlayer
+  - ZKProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - ActionSheetPicker-3.0
+    - ActiveLabel
+    - AgoraRtcEngine_iOS
+    - Alamofire
+    - AlamofireImage
+    - AppAuth
+    - AsyncSwift
+    - Braintree
+    - BraintreeDropIn
+    - BSImagePicker
+    - CircleBar
+    - Cosmos
+    - CropViewController
+    - DropDown
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FittedSheets
+    - Floaty
+    - FontAwesome.swift
+    - Google-Mobile-Ads-SDK
+    - GoogleAppMeasurement
+    - GoogleMaps
+    - GooglePlaces
+    - GoogleSignIn
+    - GoogleUserMessagingPlatform
+    - GoogleUtilities
+    - GTMAppAuth
+    - GTMSessionFetcher
+    - ImageSlideshow
+    - IQKeyboardManager
+    - iRecordView
+    - JGProgressHUD
+    - Kingfisher
+    - LinearProgressBar
+    - MMPlayerView
+    - MobilePlayer
+    - nanopb
+    - NVActivityIndicatorView
+    - OneSignal
+    - PaginatedTableView
+    - Paystack
+    - Player
+    - PromisesObjC
+    - R.swift
+    - R.swift.Library
+    - SDWebImage
+    - SkyFloatingLabelTextField
+    - Socket.IO-Client-Swift
+    - Starscream
+    - SwiftyBeaver
+    - Toast-Swift
+    - TTRangeSlider
+    - TwilioVideo
+    - VersaPlayer
+    - XLPagerTabStrip
+    - YouTubePlayer
+    - ZKProgressHUD
+
+EXTERNAL SOURCES:
+  SwiftEventBus:
+    :git: https://github.com/cesarferreira/SwiftEventBus.git
+    :tag: 3.0.0
+
+CHECKOUT OPTIONS:
+  SwiftEventBus:
+    :git: https://github.com/cesarferreira/SwiftEventBus.git
+    :tag: 3.0.0
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: 36da254b97a09ff89679ecb8b8510bd3e5bdc773
+  ActiveLabel: 5e3f4de79a1952d4604b845a0610d4776e4b82b3
+  AgoraRtcEngine_iOS: 17e55feec1bde14adc30fd9d743332d1e7821b62
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
+  AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
+  AsyncSwift: 65775a7b32e740609b24969ece3de58723b9dc3e
+  Braintree: e1f291d24a909bfbed88e86a0c3db76f26af9697
+  BraintreeDropIn: 35a2fa264d67c4efc9c6e419d9279b382dc48bd6
+  BSImagePicker: 0fe04b574d4d6b81093785d2af6c26227efc8428
+  CircleBar: 8e17d2090e6e319b518010535a3145fb8fd68c22
+  Cosmos: b47fddf2102bb48580cd3025d9ce0a5c658a65da
+  CropViewController: 7093b39ec3cb508531b22d35773e06cecd7378d8
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  FBSDKCoreKit: fada1a6a0076724678993ff05a633848765ff18c
+  FBSDKLoginKit: d5ffe6d808897019ccf16feb6f0a7ab260bc5cd6
+  FittedSheets: 470a7740a083156d711ab6ccd37d1d539005e6aa
+  Floaty: e2bd5a0f6f7f70899e26ff2da31081c8bee8d1b0
+  FontAwesome.swift: 6b52cb7be66eacd28cbfaa0ca7ffd0de4a186a1d
+  Google-Mobile-Ads-SDK: efb7fb74595668fbbe680f0d1c06f9a8ff694c7c
+  GoogleAppMeasurement: 0c3b134b2c0a90c4c24833873894bfe0e42a0384
+  GoogleMaps: 008e2c80e38605b56b560e8deb73d4194ff30bef
+  GooglePlaces: a058b776259c13e1323c9ff135549cb1b13ad8e7
+  GoogleSignIn: a62edd0516721d2a3db1259a5681b91f9b41c06a
+  GoogleUserMessagingPlatform: b168e8c46cd8f92aa3e34b584c4ca78a411ce367
+  GoogleUtilities: 31c5b01f978a70c6cff2afc6272b3f1921614b43
+  GTMAppAuth: 197a8dabfea5d665224aa00d17f164fc2248dab9
+  GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
+  ImageSlideshow: be305b54eaf2b2cfc7a7141c7c734605d44dc07d
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  iRecordView: 1204da2240abe68644b950a3477634ba344fccd2
+  JGProgressHUD: d83d7a981b85d11205e19ff8ad5bb9c40571c847
+  Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
+  LinearProgressBar: 619d6f286b608e501f39406557f60cdab3faf910
+  MMPlayerView: e28bace82369bcfbfbe29f9dcd30eeb641a46754
+  MobilePlayer: e50e2160830f3db51d6e08067318aec6a9d39408
+  nanopb: 59221d7f958fb711001e6a449489542d92ae113e
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  OneSignal: fd223b247d46e0aa97c7712f3e031c29798d018a
+  PaginatedTableView: 294d9831d5ddf5c0dcfbb4a281d4fcfb8d12f55a
+  Paystack: 5a7a9d5c47ddfd76e3d84550d9ff1f49bf6d284c
+  Player: 37e0acc16ea1495fc241df88fe9f089367513331
+  PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
+  R.swift: c533450b0f7dc494e0993f5f1a1db925d84c3006
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
+  SkyFloatingLabelTextField: 79ddc40e4ad59707fedbb48d605417aee48bb78a
+  Socket.IO-Client-Swift: 1e3e3a1f09f3312a167f0d781eb2f383d477357c
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+  SwiftEventBus: 667baca2f107fa0c9c2068950298dbfd6a4111cc
+  SwiftyBeaver: 84069991dd5dca07d7069100985badaca7f0ce82
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+  TTRangeSlider: 8cf72eca457c3b700c92eb0074be908c986e25ec
+  TwilioVideo: 057061e4302e4b2862b0ac6cf69a3321e7c29b19
+  VersaPlayer: 0e9a0ea7da786729ffb377dbd17b34641a8265e4
+  XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
+  YouTubePlayer: 2b5f2830d8f9b2cde942083211291e382c9e6bd5
+  ZKProgressHUD: af9e9929c6935587da382bf23d31b4e995b8c229
+
+PODFILE CHECKSUM: aaa587126ca18511ad5bf419d513ff0682420a9e
+
+COCOAPODS: 1.10.2

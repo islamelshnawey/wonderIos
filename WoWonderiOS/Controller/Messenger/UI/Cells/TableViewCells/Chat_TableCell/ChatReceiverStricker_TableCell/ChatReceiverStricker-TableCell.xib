@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.otf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatReceiverStricker_TableCell" rowHeight="183" id="V2X-uE-NuW" customClass="ChatReceiverStricker_TableCell" customModule="WoWonder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="248" height="183"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="V2X-uE-NuW" id="eo3-J7-bkO">
+                <rect key="frame" x="0.0" y="0.0" width="248" height="183"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZBh-By-s1V">
+                        <rect key="frame" x="16" y="2" width="200" height="170"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tUh-CW-xAp">
+                                <rect key="frame" x="4" y="4" width="192" height="162"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SG8-h6-Qdm">
+                                <rect key="frame" x="157.5" y="143.5" width="34.5" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tUh-CW-xAp" firstAttribute="centerY" secondItem="ZBh-By-s1V" secondAttribute="centerY" id="BRv-YU-GlH"/>
+                            <constraint firstItem="SG8-h6-Qdm" firstAttribute="bottom" secondItem="tUh-CW-xAp" secondAttribute="bottom" constant="-4" id="Bji-g7-lxf"/>
+                            <constraint firstItem="SG8-h6-Qdm" firstAttribute="trailing" secondItem="tUh-CW-xAp" secondAttribute="trailing" constant="-4" id="Bsc-x2-OBH"/>
+                            <constraint firstItem="tUh-CW-xAp" firstAttribute="top" secondItem="ZBh-By-s1V" secondAttribute="top" constant="4" id="RmD-RK-yHj"/>
+                            <constraint firstAttribute="width" constant="200" id="eah-aE-pc0"/>
+                            <constraint firstItem="tUh-CW-xAp" firstAttribute="leading" secondItem="ZBh-By-s1V" secondAttribute="leading" constant="4" id="ff4-pI-n44"/>
+                            <constraint firstAttribute="trailing" secondItem="tUh-CW-xAp" secondAttribute="trailing" constant="4" id="mkN-no-4VM"/>
+                            <constraint firstAttribute="height" constant="170" id="oVM-VM-uLR"/>
+                            <constraint firstAttribute="bottom" secondItem="tUh-CW-xAp" secondAttribute="bottom" constant="4" id="orZ-aF-dMh"/>
+                            <constraint firstItem="tUh-CW-xAp" firstAttribute="centerX" secondItem="ZBh-By-s1V" secondAttribute="centerX" id="si6-Ex-98a"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGN-Be-QJA">
+                        <rect key="frame" x="216" y="143" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="0qi-sJ-ke3"/>
+                            <constraint firstAttribute="height" constant="25" id="rMP-XY-NSy"/>
+                        </constraints>
+                        <state key="normal" image="star"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="ZBh-By-s1V" firstAttribute="top" secondItem="eo3-J7-bkO" secondAttribute="top" constant="2" id="AIi-Nv-kmq"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZBh-By-s1V" secondAttribute="trailing" constant="32" id="Dow-vR-hi6"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RGN-Be-QJA" secondAttribute="trailing" constant="4" id="Ia0-Dq-YjG"/>
+                    <constraint firstAttribute="bottom" secondItem="RGN-Be-QJA" secondAttribute="bottom" constant="15" id="Y2e-mm-GCO"/>
+                    <constraint firstItem="ZBh-By-s1V" firstAttribute="leading" secondItem="eo3-J7-bkO" secondAttribute="leading" constant="16" id="faw-r0-Pvc"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ZBh-By-s1V" secondAttribute="bottom" constant="10.5" id="kvq-7h-rdz"/>
+                    <constraint firstItem="RGN-Be-QJA" firstAttribute="leading" secondItem="ZBh-By-s1V" secondAttribute="trailing" id="wxW-cn-0c6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="tuS-VX-ALw"/>
+            <connections>
+                <outlet property="starBtn" destination="RGN-Be-QJA" id="TDh-JH-OlS"/>
+                <outlet property="stickerImage" destination="tUh-CW-xAp" id="GCI-9o-Xpm"/>
+                <outlet property="timeLabel" destination="SG8-h6-Qdm" id="OWa-6f-JVz"/>
+            </connections>
+            <point key="canvasLocation" x="196.80000000000001" y="48.125937031484263"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="star" width="32" height="32"/>
+    </resources>
+</document>

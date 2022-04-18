@@ -1,0 +1,26 @@
+{
+  "images" : [
+    {
+      "filename" : "ionicons_2-0-1_ios-camera-outline_258_16_a84849_none.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "ionicons_2-0-1_ios-camera-outline_258_16_a84849_none-1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "ionicons_2-0-1_ios-camera-outline_258_16_a84849_none-2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "template-rendering-intent" : "template"
+  }
+}

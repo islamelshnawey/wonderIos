@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ColorCollectionItem" id="vx7-ma-SFG" customClass="ColorCollectionItem" customModule="WoWonder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="144" height="131"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="144" height="131"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oLq-Ks-pgZ">
+                        <rect key="frame" x="14.5" y="35" width="115" height="105"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="jNn-ai-snu"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="oLq-Ks-pgZ" firstAttribute="height" secondItem="vx7-ma-SFG" secondAttribute="height" multiplier="0.8" id="2WF-0V-UlG"/>
+                <constraint firstItem="oLq-Ks-pgZ" firstAttribute="centerX" secondItem="jNn-ai-snu" secondAttribute="centerX" id="SiL-9Z-ojH"/>
+                <constraint firstItem="oLq-Ks-pgZ" firstAttribute="width" secondItem="vx7-ma-SFG" secondAttribute="width" multiplier="0.8" id="Y8z-Cc-9Aq"/>
+                <constraint firstItem="oLq-Ks-pgZ" firstAttribute="centerY" secondItem="jNn-ai-snu" secondAttribute="centerY" id="szA-3W-KTC"/>
+            </constraints>
+            <size key="customSize" width="144" height="131"/>
+            <connections>
+                <outlet property="bgView" destination="oLq-Ks-pgZ" id="qD2-8h-zR4"/>
+            </connections>
+            <point key="canvasLocation" x="94" y="123"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

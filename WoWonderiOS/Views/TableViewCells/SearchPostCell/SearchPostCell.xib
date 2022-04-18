@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchCell" rowHeight="65" id="KGk-i7-Jjw" customClass="SearchPostCell" customModule="WoWonder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ro9-75-Sq8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="think" translatesAutoresizingMaskIntoConstraints="NO" id="h6S-Yo-8Ak" customClass="Roundimage" customModule="WoWonder" customModuleProvider="target">
+                                <rect key="frame" x="10" y="8.5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="T7A-Nj-Vpb"/>
+                                    <constraint firstAttribute="height" constant="40" id="yaa-Wl-xWO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search for posts" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3G-GI-nbD" customClass="RoundLabel" customModule="WoWonder" customModuleProvider="target">
+                                <rect key="frame" x="60" y="8.5" width="250" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="rvM-P7-b57"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.66659259800000004" green="0.66670930390000005" blue="0.66658520700000001" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="i3G-GI-nbD" firstAttribute="centerY" secondItem="h6S-Yo-8Ak" secondAttribute="centerY" id="1cQ-60-AlW"/>
+                            <constraint firstItem="h6S-Yo-8Ak" firstAttribute="leading" secondItem="ro9-75-Sq8" secondAttribute="leading" constant="10" id="71I-yb-ihr"/>
+                            <constraint firstItem="h6S-Yo-8Ak" firstAttribute="centerY" secondItem="ro9-75-Sq8" secondAttribute="centerY" id="Dn7-gB-d0o"/>
+                            <constraint firstItem="i3G-GI-nbD" firstAttribute="leading" secondItem="h6S-Yo-8Ak" secondAttribute="trailing" constant="10" id="Pal-Qu-gNV"/>
+                            <constraint firstAttribute="trailing" secondItem="i3G-GI-nbD" secondAttribute="trailing" constant="10" id="lDZ-e1-C4y"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ro9-75-Sq8" secondAttribute="trailing" id="Krb-1e-IER"/>
+                    <constraint firstItem="ro9-75-Sq8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Nz3-Ox-ljV"/>
+                    <constraint firstItem="ro9-75-Sq8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ufy-06-BQq"/>
+                    <constraint firstAttribute="bottom" secondItem="ro9-75-Sq8" secondAttribute="bottom" constant="8" id="znm-nC-ybc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="-23.188405797101453" y="92.745535714285708"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="h6S-Yo-8Ak">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="i3G-GI-nbD">
+            <size key="intrinsicContentSize" width="125.5" height="27"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="think" width="30" height="30"/>
+    </resources>
+</document>

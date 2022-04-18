@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="liveCommentsCell" rowHeight="69" id="KGk-i7-Jjw" customClass="LiveCommentCell" customModule="WoWonder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="333" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="333" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j3O-57-jCR">
+                        <rect key="frame" x="0.0" y="0.0" width="333" height="69"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d-cover" translatesAutoresizingMaskIntoConstraints="NO" id="APp-WW-dpQ" customClass="Roundimage" customModule="WoWonder" customModuleProvider="target">
+                                <rect key="frame" x="10" y="14.5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="86A-I0-QfM"/>
+                                    <constraint firstAttribute="width" constant="40" id="dhh-Ou-WJh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ahmed Khans" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buN-Vh-lI2">
+                                <rect key="frame" x="58" y="14.5" width="265" height="18"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2c-Mq-HoT">
+                                <rect key="frame" x="58" y="35.5" width="265" height="21.5"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="buN-Vh-lI2" firstAttribute="leading" secondItem="APp-WW-dpQ" secondAttribute="trailing" constant="8" id="0sZ-Fu-SC7"/>
+                            <constraint firstItem="D2c-Mq-HoT" firstAttribute="leading" secondItem="buN-Vh-lI2" secondAttribute="leading" id="FfI-Wn-7YG"/>
+                            <constraint firstItem="D2c-Mq-HoT" firstAttribute="top" secondItem="buN-Vh-lI2" secondAttribute="bottom" constant="3" id="RFW-1k-P4G"/>
+                            <constraint firstItem="D2c-Mq-HoT" firstAttribute="trailing" secondItem="buN-Vh-lI2" secondAttribute="trailing" id="THl-wi-NPr"/>
+                            <constraint firstItem="APp-WW-dpQ" firstAttribute="centerY" secondItem="j3O-57-jCR" secondAttribute="centerY" id="aa9-8h-rdV"/>
+                            <constraint firstItem="APp-WW-dpQ" firstAttribute="leading" secondItem="j3O-57-jCR" secondAttribute="leading" constant="10" id="cqM-A3-Nx4"/>
+                            <constraint firstAttribute="bottom" secondItem="D2c-Mq-HoT" secondAttribute="bottom" constant="12" id="iKH-sV-Run"/>
+                            <constraint firstItem="buN-Vh-lI2" firstAttribute="top" secondItem="APp-WW-dpQ" secondAttribute="top" id="mDc-jd-P0V"/>
+                            <constraint firstAttribute="trailing" secondItem="buN-Vh-lI2" secondAttribute="trailing" constant="10" id="vbO-gS-7fG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="j3O-57-jCR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Fc0-fj-qyR"/>
+                    <constraint firstAttribute="bottom" secondItem="j3O-57-jCR" secondAttribute="bottom" id="JIv-mM-EuW"/>
+                    <constraint firstAttribute="trailing" secondItem="j3O-57-jCR" secondAttribute="trailing" id="KXO-Es-l34"/>
+                    <constraint firstItem="j3O-57-jCR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="nEu-Xv-usI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="proimage" destination="APp-WW-dpQ" id="ZCF-6m-zyA"/>
+                <outlet property="textLbl" destination="D2c-Mq-HoT" id="ofT-Ct-Ftv"/>
+                <outlet property="userName" destination="buN-Vh-lI2" id="Xy4-DO-qpX"/>
+            </connections>
+            <point key="canvasLocation" x="-13.768115942028986" y="157.70089285714286"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="APp-WW-dpQ">
+            <size key="intrinsicContentSize" width="918" height="300"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="d-cover" width="918" height="300"/>
+    </resources>
+</document>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="355" id="KGk-i7-Jjw" customClass="AddPostSectionTwoTableItem" customModule="WoWonder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="356"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="356"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B7W-oX-83Y">
+                        <rect key="frame" x="10" y="0.0" width="310" height="260"/>
+                    </imageView>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="PUT-b1-pVo">
+                        <rect key="frame" x="0.0" y="308" width="320" height="60"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="IW4-og-h2C"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eh7-1h-mgV">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="-1" id="Osq-bO-Kei"/>
+                            <outlet property="delegate" destination="-1" id="QSK-fr-3dv"/>
+                        </connections>
+                    </collectionView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ty7-83-8Jm">
+                        <rect key="frame" x="10" y="0.0" width="310" height="260"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfF-4s-KEf">
+                        <rect key="frame" x="5" y="268" width="315" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="CgN-qK-L8y"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                        <color key="textColor" red="0.66535824539999999" green="0.27559396619999998" blue="0.26545682549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HC2-r9-ETg">
+                        <rect key="frame" x="5" y="268" width="315" height="35"/>
+                        <connections>
+                            <action selector="Address:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="duy-cn-Wr0"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HC2-r9-ETg" firstAttribute="bottom" secondItem="wfF-4s-KEf" secondAttribute="bottom" id="1Jm-xa-XL2"/>
+                    <constraint firstItem="Ty7-83-8Jm" firstAttribute="top" secondItem="B7W-oX-83Y" secondAttribute="top" id="6f6-01-3n8"/>
+                    <constraint firstItem="B7W-oX-83Y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="IeW-02-NAk"/>
+                    <constraint firstAttribute="bottom" secondItem="PUT-b1-pVo" secondAttribute="bottom" constant="-12" id="Ojw-WT-5LN"/>
+                    <constraint firstItem="B7W-oX-83Y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="WtA-Mg-yLt"/>
+                    <constraint firstItem="HC2-r9-ETg" firstAttribute="top" secondItem="wfF-4s-KEf" secondAttribute="top" id="ZtA-Q6-EUp"/>
+                    <constraint firstAttribute="trailing" secondItem="B7W-oX-83Y" secondAttribute="trailing" id="b1g-GV-jog"/>
+                    <constraint firstItem="Ty7-83-8Jm" firstAttribute="bottom" secondItem="B7W-oX-83Y" secondAttribute="bottom" id="dBC-jx-Des"/>
+                    <constraint firstItem="Ty7-83-8Jm" firstAttribute="leading" secondItem="B7W-oX-83Y" secondAttribute="leading" id="iU1-lD-Jen"/>
+                    <constraint firstItem="PUT-b1-pVo" firstAttribute="top" secondItem="wfF-4s-KEf" secondAttribute="bottom" constant="5" id="kJB-SF-f2F"/>
+                    <constraint firstAttribute="trailing" secondItem="PUT-b1-pVo" secondAttribute="trailing" id="kld-UJ-Kjr"/>
+                    <constraint firstItem="HC2-r9-ETg" firstAttribute="trailing" secondItem="wfF-4s-KEf" secondAttribute="trailing" id="pgR-Gt-Jq2"/>
+                    <constraint firstItem="wfF-4s-KEf" firstAttribute="leading" secondItem="PUT-b1-pVo" secondAttribute="leading" constant="5" id="tHX-hG-SqU"/>
+                    <constraint firstItem="PUT-b1-pVo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="uD2-V6-Cop"/>
+                    <constraint firstItem="HC2-r9-ETg" firstAttribute="leading" secondItem="wfF-4s-KEf" secondAttribute="leading" id="vng-PZ-Fex"/>
+                    <constraint firstItem="Ty7-83-8Jm" firstAttribute="trailing" secondItem="B7W-oX-83Y" secondAttribute="trailing" id="vtF-29-5Dx"/>
+                    <constraint firstItem="wfF-4s-KEf" firstAttribute="top" secondItem="B7W-oX-83Y" secondAttribute="bottom" constant="8" id="xIF-H0-F6r"/>
+                    <constraint firstItem="wfF-4s-KEf" firstAttribute="trailing" secondItem="PUT-b1-pVo" secondAttribute="trailing" id="yGE-OO-13q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addressBtn" destination="HC2-r9-ETg" id="HD2-o6-Xce"/>
+                <outlet property="addressLabel" destination="wfF-4s-KEf" id="fLW-hM-13s"/>
+                <outlet property="backGroundImage" destination="B7W-oX-83Y" id="bMm-14-3Gb"/>
+                <outlet property="collectionView" destination="PUT-b1-pVo" id="BIV-Bd-noc"/>
+                <outlet property="textView" destination="Ty7-83-8Jm" id="5fd-Wp-5bx"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="111.16071428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
